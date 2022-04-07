@@ -49,7 +49,8 @@ public class FileUpload extends HttpServlet {
 
 		ServletFileUpload upload = new ServletFileUpload(factory);
 		try {
-			List items = upload.parseRequest(request);
+//			List items = upload.parseRequest(request);
+			List items = null;
 			for (int i = 0; i < items.size(); i++) {
 				FileItem fileItem = (FileItem) items.get(i);
 
