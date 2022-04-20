@@ -46,7 +46,6 @@ public class FileUpload extends HttpServlet {
 		DiskFileItemFactory factory = new DiskFileItemFactory();
 		factory.setRepository(currentDirPath);
 		
-		factory.setSizeThreshold(1024 * 1024 * 10);
 
 		ServletFileUpload upload = new ServletFileUpload(factory);
 		try {
